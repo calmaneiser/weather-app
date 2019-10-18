@@ -1,0 +1,113 @@
+// @import "../custom_theme.scss"
+// $background: #1976d2;
+// $background_dark: #1b3c5d;
+// $font-color: white;
+
+mat-toolbar {
+  // background: $background !import ant;
+}
+
+mat-card.weather-card {
+  // color: $font-color;
+  // background: linear-gradient(to left, $background, $background_dark);
+  border-radius: 0;
+}
+mat-list > .weather-item {
+  // color: $font-color !important;
+  font-size: 17px;
+}
+#weather-container {
+  // width: 80%;
+  width: 55%;
+  margin: 0 auto;
+}
+
+mat-form-field.city-selector {
+  float: right;
+  font-size: 15px !important;
+}
+table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep .mat-select-trigger {
+  min-width: 40px;
+}
+
+::ng-deep .mat-select-panel {
+  max-height: 300px !important;
+}
+
+/** Card Container **/
+.weather-card-container {
+  display: flex;
+  justify-content: center;
+
+  .box {
+    padding: 10px;
+  }
+  .box-1 {
+    display: flex;
+    justify-content: center;
+
+    flex: 1;
+  }
+  .box-2 {
+    flex: 2;
+  }
+
+  .right-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .rc {
+      padding: 10px;
+    }
+    .rc-1 {
+      flex: 1;
+      .title {
+        letter-spacing: 5px;
+        text-align: center;
+        margin-top: 0.5em;
+        font-size: 48px;
+        font-weight: bold;
+      }
+      .title-bars {
+        // background: $background;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+        height: 5px;
+      }
+    }
+    .rc-2 {
+      flex: 1;
+      .desc {
+        text-align: center;
+        // background: $background;
+        border-radius: 5px;
+        padding-bottom: 5px;
+        .cloud-img {
+          position: relative;
+          top: -8px;
+          right: -6px;
+        }
+        .temperature {
+          margin-left: -1.2em;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        .date-time {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
